@@ -2,6 +2,14 @@
   "name": "it-social-links",
   "version": "0.0.1",
   "keywords": ["angular", "social", "social media", "icons", "directive"],
+  "ignore":[
+    "app/**/*.*",
+    "app/test/**/*.*"
+  ],
+  "main":[
+    "dist/component-min.js",
+    "dist/styles/optimized.css"
+  ],
   "dependencies": {
     "angular": "^1.1"
   },
