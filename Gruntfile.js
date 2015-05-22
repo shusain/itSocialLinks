@@ -200,9 +200,9 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/images',
+          cwd: '<%= yeoman.app %>/component/images',
           src: '{,*/}*.{png,jpg,jpeg,gif}',
-          dest: '<%= yeoman.dist %>/images'
+          dest: '<%= yeoman.dist %>/styles/images'
         }]
       }
     },
@@ -270,7 +270,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
-          src: ['generated/*']
+          src: ['*']
         }]
       },
       styles: {
