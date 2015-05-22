@@ -1,24 +1,25 @@
-# Install the scripts with bower
+# Social Media Links Component
 
+## Install with bower
 `
 bower install --save git@lab.intellectual-tech.com:components/itSocialLinks.git
 `
 
-Add dependencies to index.html
+## Add dependencies to index.html
 
 ```
 <link rel="stylesheet" type="text/css" href="bower_components/it-social-links/dist/styles/optimized.css"/>
 <script type="text/javascript" src="bower_components/it-social-links/dist/component-min.js"></script>
 ```
 
-Add social media dependency to your angular module
+## Add social media dependency to your angular module
 
 ```
 angular.module('yourMainModule', ['socialMedia'])
 ```
 
 
-Add this to your HTML where you want the links to show up
+## Add this to your HTML where you want the links to show up
 
 ```
 <social-media-links
@@ -30,7 +31,7 @@ Add this to your HTML where you want the links to show up
 </social-media-links>
 ```
 
-Possible options are
+## Possible options/attributes are
 ```
 stumbleupon
 digg
@@ -92,4 +93,19 @@ stackoverflow
 foursquare
 quora
 photobucket
+```
+
+## Based on CSS and sprites found below
+
+```
+/*  
+  Super Massive CSS-Sprite Social Media Icon Set 
+  by Brandon Setter
+  http://blog.brandonsetter.com
+  
+  License: 
+  Free to use for whatever you like. If you use them an optional link to http://blog.brandonsetter.com would be appreciated :)
+  Vector Icons Provided by: http://icondock.com and are free to use for whatever purposes.
+*
+*/
 ```
