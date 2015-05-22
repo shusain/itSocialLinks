@@ -1,48 +1,111 @@
-#Project Template
+# Social Media Links Component
 
-##Introduction
+## Install with bower
+`
+bower install --save git@lab.intellectual-tech.com:components/itSocialLinks.git
+`
 
-Basic project with header, body, footer, navigation, and some basic angular routing setup.
+## Add dependencies to index.html
 
-----------------------
-## Cloning the Project
-### SSH Connection
-`ssh -i ~/.ssh/System76Connection.pem ubuntu@intellectual-tech.com`
-
-### Login as Git User and Make Bare Repo
 ```
-su git
-cd ~/repo
-git init --bare newProjectNameHere.git
+<link rel="stylesheet" type="text/css" href="bower_components/it-social-links/dist/styles/optimized.css"/>
+<script type="text/javascript" src="bower_components/it-social-links/dist/component-min.js"></script>
 ```
 
-### Make a Copy of this Project Template
+## Add social media dependency to your angular module
+
 ```
-mkdir ~/tempGitCreation
-cd ~/tempGitCreation
-git clone --mirror git@intellectual-tech.com:repo/project-template.git
+angular.module('yourMainModule', ['socialMedia'])
 ```
 
-### Push the Project Template into the New Project Repository
+
+## Add this to your HTML where you want the links to show up
+
 ```
-cd project-template.git
-git push --mirror git@intellectual-tech.com:repo/newProjectNameHere.git
-cd /var/www/
-git clone git@intellectual-tech.com:repo/newProjectNameHere.git
-cd newProjectNameHere
-npm install
-bower install
-grunt phpwatch
+<social-media-links
+	facebook="http://www.facebook.com/IntellectualTech"
+	instagram="http://instagram.com/intellectualtech"
+	gpluslight="https://plus.google.com/u/0/112973627906185189483/posts"
+	twitter="https://twitter.com/Intellectual_IT"
+	youtube="https://www.youtube.com/user/IntellectualTech">
+</social-media-links>
 ```
-----------------------
-##Post Cloning Updates
-Update the following sections that have company related information
 
-* HTML Page Title
-* Header/Logo
-* Footer
-* Contact Page
+## Possible options/attributes are
+```
+stumbleupon
+digg
+facebook
+twitter
+delicious
+flickr
+youtube
+skype
+linkedin
+vimeo
+blogger
+tumblr
+picasa
+wordpress
+rss
+mobileme
+apple
+gpluslight
+gplusdark
+twitterb
+instagram
+myspace
+dribble
+blip
+spotify
+grooveshark
+ichat
+github
+soundcloud
+pinterest
+smugmug
+virb
+technorait
+slashdot
+sharethis
+posterous
+googleb
+reddit
+friendfollow
+designfloat
+amazon
+netvibes
+bing
+yahoo
+aim
+email
+ebay
+paypal
+feedburner
+podcast
+appstoreios
+itunes
+appstoremac
+yelp
+wthree
+etsy
+stackoverflow
+foursquare
+quora
+photobucket
+```
 
+## Based on CSS and sprites found below
 
-##Update Navigation and Create Partials to Reflect Page Structure
-Update the mainApp.js file to have the appropriate routes and partials for navigation.  For each page create a partial with a header to test the navigation.
+```
+/*  
+  Super Massive CSS-Sprite Social Media Icon Set 
+  by Brandon Setter
+  http://blog.brandonsetter.com
+  
+  License: 
+  Free to use for whatever you like. If you use them an optional link to http://blog.brandonsetter.com would be appreciated :)
+  Vector Icons Provided by: http://icondock.com and are free to use for whatever purposes.
+*
+*/
+```
