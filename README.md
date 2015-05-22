@@ -1,7 +1,7 @@
 # Install the scripts with bower
 
 `
-bower install --save 
+bower install --save git@lab.intellectual-tech.com:components/itSocialLinks.git
 `
 
 Add dependencies to index.html
